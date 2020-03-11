@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<div class="form-container">
+    <h1>Contact us!</h1>
+    <form [formGroup]="Formulario" (ngSubmit)="doSomething()">
+        <input type="text" formControlName="name" placeholder="Your Name">
+    
+
+        <input type="text" formControlName="email" placeholder="Your email">
+
+
+        <textarea formControlName="message" placeholder="Type your message"></textarea>
+        
+        <button type="submit" class="btn-send" >Send</button>
+    </form>
+</div>
