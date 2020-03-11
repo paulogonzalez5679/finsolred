@@ -1,0 +1,198 @@
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #9dc15b;
+    z-index: 11000;
+    position: fixed;
+    display: block
+}
+.preloader {
+    position: absolute;
+    margin: 0 auto;
+    left: 1%;
+    right: 1%;
+    top: 45%;
+    width: 95px;
+    height: 95px;
+    background: center center no-repeat none;
+    background-size: 95px 95px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%
+}
+.loader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:8888;
+  }
+  .loader-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #9dc15b;
+    z-index: -1;
+    transition: top 1.2s linear 3.1s;
+  }
+  .loader-container:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #9dc15b;
+    z-index: -1;
+    transition: bottom 1.2s linear 3.1s;
+  }
+  .loader-container.done:before {
+    top: -50%;
+  }
+  .loader-container.done:after {
+    bottom: -50%;
+  }
+  .progress-br {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: center;
+  }
+  .progress-br .progress__item {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+  .progress-br .progress__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -3px;
+    margin-left: 0px;
+    width: 45px;
+    height: 45px;
+    border-top: solid 10px #fff;
+    border-right: solid 10px #fff;
+    border-top-right-radius: 100%;
+    transform-origin: left bottom;
+    -webkit-animation: spin 3s linear infinite;
+  }
+  .progress-br.float .progress__item:before {
+    border-top-width: 2px;
+    margin-top: 0px;
+    height: 50px;
+  }
+  .progress-br.float.shadow:before {
+    border-top-width: 2px;
+    margin-top: -41px;
+    height: 50px;
+  }
+  .progress-br.shadow:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -43px 0 0 12px;
+    width: 45px;
+    height: 45px;
+    border-top: solid 10px #127de7;
+    border-right: solid 10px #127de7;
+    border-top-right-radius: 100%;
+    z-index: -1;
+    transform-origin: left bottom;
+    -webkit-animation: spin 3s linear infinite;
+  }
+  .progress-br.shadow:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    color: #127de7;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid #127de7;
+    border-radius: 50%;
+    margin: -40px 0 0 -40px;
+    z-index: -1;
+    transform-origin: center;
+  }
+  .progress-br.done .progress__item {
+    opacity: 0;
+    -webkit-animation: done 3.1s;
+    transition: opacity 0.3s linear 3.1s;
+  }
+  .progress-br.done .progress__item:before {
+    display: none;
+  }
+  .progress-br.done:before {
+    display: none;
+  }
+  .progress-br.done:after {
+    opacity: 0;
+    -webkit-animation: done 3.1s;
+    transition: opacity 0.15s linear 3.1s;
+  }
+  .progress-br .progress__item {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+  .progress-br .progress__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -3px;
+    margin-left: 0px;
+    width: 45px;
+    height: 45px;
+    border-top: solid 10px #fff;
+    border-right: solid 10px #fff;
+    border-top-right-radius: 100%;
+    transform-origin: left bottom;
+    -webkit-animation: spin 3s linear infinite;
+  }
+  .progress-br.float .progress__item:before {
+    border-top-width: 2px;
+    margin-top: 0px;
+    height: 50px;
+  }
+  .navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+	background: #333333;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.navbar-toggler:hover{
+	background: #127de7;
+}
+
+.navbar-toggler:hover .icon-bar{
+	background: #ffffff;
+}
