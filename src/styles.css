@@ -50,15 +50,15 @@
 }
 
 .dmoain-pricing table .domain-head {
+  text-align: left;
   color: #fff;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 15px;
   background: #2888f5;
 
 }
 
 .dmoain-pricing table .domain-head th {
-  border-right: 2px solid #fff;
+  border-right: 5px solid #fff;
 
 }
 
@@ -67,29 +67,17 @@
 
 }
 
+/*Texto de la cabecera*/
 .dmoain-pricing table th {
-  padding: 11px 0;
+  padding: 20px 0;
   text-align: center;
   font-weight: 600;
 
 }
 
 .dmoain-pricing table td {
-  padding: 20px 0;
-  text-align: left;
-  font-weight: 700;
-  color: #000;
-}
-
-.dmoain-pricing table th,
-.dmoain-pricing tbody tr td:nth-child(1) {
-  text-transform: capitalize;
-}
-
-.dmoain-pricing tbody tr td:nth-child(1) {
-  padding: 20px 0;
-  text-align: left;
-  font-weight: 700;
+  padding: 10px 0;
+  text-align: center;
   color: #000;
 }
 .p3
@@ -1860,7 +1848,7 @@ footer p {
   left: 50px;
 }
 .div3 {
-  max-width: 380px;
+  max-width: 300px;
 }
 .space {
   top: 50px;
