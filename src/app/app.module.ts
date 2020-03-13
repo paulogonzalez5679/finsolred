@@ -14,6 +14,8 @@ import { ConocenosMasComponent } from './conocenos-mas/conocenos-mas.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
+import { InicioComponent } from './inicio/inicio.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {HttpClientModule} from '@angular/common/http';
     ConveniosComponent,
     ContactanosComponent,
     FooterComponent,
-    ConocenosMasComponent
+    ConocenosMasComponent,
+    InicioComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
