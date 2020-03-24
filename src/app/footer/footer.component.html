@@ -1,1 +1,59 @@
-<p>footer works!</p>
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4 class="text-white">Sobre nosotros</h4>
+                    <p class="p3">
+                        Nuestra eficiencia en el trabajo es algo que nos enorgullece, planteamos una estrategia diferenciada, ajustada y probada que nos permite ofertar un servicio de calidad a cada uno de nuestros clientes, a través del tiempo hemos invertido en tecnología y en gestión de la información que nos permite tener buenas herramientas para cumplir con nuestros compromisos comerciales.
+                        <br>Nos involucramos en la situación de las personas a quienes contactamos, las entendemos, apoyamos y damos opciones convenientes.
+                        <br>Hacemos nuestras tareas con profesionalismo y calidad humana.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4 class="text-white">Contactanos</h4>
+                    <p>
+                        Nuestra Prioridad nuestro clientes nuestro objetivo ser ser los mejores.
+                        Contactanos
+                    </p>
+                    <p class="number">
+                        <br>
+                        012-6532-568-9746 <br>
+                        012-6532-569-9748
+                    </p>
+                </div>
+            </div>						
+            <div class="col-lg-5  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4 class="text-white">E-mail</h4>
+                    <p>Envíanos un correo, te ayudaremos con tus dudas.</p>
+                    <div class="d-flex flex-row" id="mc_embed_signup">
+
+                        <form [formGroup]="Formulario" (ngSubmit)="doSomething()" class="form-area mt-60 contact-form text-left">
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <input formControlName="name" placeholder="Ingrese su nombre" class="common-input mb-20 form-control" type="text">
+                
+                                    <input formControlName="email" placeholder="Ingrese su correo" class="common-input mb-20 form-control" type="text">
+                
+                                    <input formControlName="phone" placeholder="Ingrese su telefono" class="common-input mb-20 form-control" type="text">
+                
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <textarea class="common-textarea mt-10 form-control" formControlName="message" placeholder="Ingrese su mensaje"></textarea>
+                                    <button class="primary-btn mt-20">Enviar</button>
+                                    <div class="mt-10 alert-msg">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>						
+        </div>
+    </div>
+</footer>	
+
+
