@@ -27,7 +27,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "firebase": ">= 5.5.7 <8",
-    "firebase-tools": "^7.14.0",
+    "firebase-tools": "^11.30.0",
     "hammerjs": "^2.0.8",
     "nodemailer": "^6.4.4",
     "nodemon": "^2.0.2",
@@ -56,7 +56,7 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
     "@angular-devkit/architect": "<0.900 || ^0.900.0-0 || ^9.0.0-0",
-    "firebase-tools": "^7.12.0",
+    "firebase-tools": "^11.30.0",
     "fuzzy": "^0.1.3",
     "inquirer": "^6.2.2",
     "inquirer-autocomplete-prompt": "^1.0.1"
